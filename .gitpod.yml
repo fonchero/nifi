@@ -1,10 +1,10 @@
-image: gitpod/workspace-docker
+image: mcr.microsoft.com/devcontainers/base:ubuntu
 
 tasks:
   - name: Start Apache NiFi
     command: |
       docker-compose up -d
-      sleep 15
+      sleep 20
 
 ports:
   - port: 8080
